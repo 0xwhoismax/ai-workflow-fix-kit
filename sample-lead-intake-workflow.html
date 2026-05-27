@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Free Sample: Lead Intake AI Workflow</title>
+    <style>
+      body {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #17211d;
+        background: #f7f5ef;
+        line-height: 1.55;
+      }
+
+      a {
+        color: #0f766e;
+        font-weight: 700;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        background: #fff;
+        border: 1px solid #d9ded8;
+        border-radius: 8px;
+        padding: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="./">Back to the kit</a></p>
+    <h1>Free Sample: Lead Intake AI Workflow</h1>
+    <p>This is one sample workflow from the AI Workflow Fix Kit. The full kit includes inbox-to-task routing, meeting follow-ups, review request drafts, prompt templates, a buyer handout, and an implementation checklist.</p>
+
+    <h2>Workflow</h2>
+    <ol>
+      <li>A new lead arrives from a form, email, or booking page.</li>
+      <li>The lead is added to a spreadsheet or CRM.</li>
+      <li>AI summarizes the request and classifies urgency.</li>
+      <li>AI drafts a reply for human review.</li>
+      <li>The owner reviews, edits, and sends.</li>
+    </ol>
+
+    <h2>Prompt</h2>
+    <pre>You are helping a small business triage a new lead.
+
+Return valid JSON with:
+- summary
+- priority: low, medium, or high
+- buyer_intent: low, medium, or high
+- missing_information
+- recommended_next_action
+- draft_reply
+
+Lead details:
+{{lead_text}}</pre>
+
+    <h2>Tracking Columns</h2>
+    <pre>lead_name,email,phone,company,need,budget,deadline,source,status,ai_summary,ai_priority,draft_reply,next_action</pre>
+
+    <p><a href="https://maxiverse1.gumroad.com/l/ai-workflow-fix-kit">Get the full $19 kit</a></p>
+  </body>
+</html>

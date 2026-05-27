@@ -7,7 +7,7 @@
     <meta name="description" content="Prompts, templates, and workflow recipes for turning repetitive admin work into human-reviewed AI workflows.">
     <meta property="og:title" content="AI Workflow Fix Kit for Small Businesses">
     <meta property="og:description" content="Prompts, templates, and recipes for lead intake, inbox-to-task routing, meeting follow-ups, and review request drafts.">
-    <meta property="og:image" content="/assets/gumroad-cover.png">
+    <meta property="og:image" content="https://0xwhoismax.github.io/ai-workflow-fix-kit/assets/gumroad-cover.png">
     <style>
       :root {
         --ink: #17211d;
@@ -110,6 +110,11 @@
         font-weight: 800;
       }
 
+      .button.secondary {
+        background: var(--white);
+        color: var(--ink);
+      }
+
       .price {
         font-size: 20px;
         font-weight: 800;
@@ -162,6 +167,50 @@
         line-height: 1.5;
       }
 
+      .split {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 24px;
+        align-items: start;
+      }
+
+      .list {
+        margin: 0;
+        padding-left: 22px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .panel {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 24px;
+      }
+
+      .faq {
+        display: grid;
+        gap: 14px;
+      }
+
+      .faq details {
+        background: var(--white);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      .faq summary {
+        cursor: pointer;
+        font-weight: 800;
+      }
+
+      .faq p {
+        margin-bottom: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
       @media (max-width: 860px) {
         .hero {
           grid-template-columns: 1fr;
@@ -193,6 +242,7 @@
           <p class="lead">A practical kit for small businesses that want lead summaries, inbox-to-task routing, meeting follow-ups, and review request drafts without building a complicated AI stack.</p>
           <div class="actions">
             <a class="button" href="https://maxiverse1.gumroad.com/l/ai-workflow-fix-kit">Buy the kit</a>
+            <a class="button secondary" href="./sample-lead-intake-workflow.html">View free sample</a>
             <span class="price">$19 digital download</span>
           </div>
         </div>
@@ -220,6 +270,39 @@
           </div>
         </div>
         <p class="note">Built around human review. AI drafts, summarizes, classifies, and extracts; the business owner stays in control of final messages and decisions.</p>
+      </section>
+
+      <section class="section split">
+        <div>
+          <h2>Use it in one afternoon</h2>
+          <p class="note">The kit is designed around small, specific workflows. Pick one repetitive process, set up the tracker, add the prompt, and keep a human checkpoint before anything customer-facing is sent.</p>
+        </div>
+        <div class="panel">
+          <ul class="list">
+            <li>Copy-paste prompts for common operations workflows.</li>
+            <li>Spreadsheet columns for clean handoff and tracking.</li>
+            <li>Implementation checklist for safer AI-assisted workflows.</li>
+            <li>Buyer handout in Markdown, HTML, and Word formats.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Is this a software app?</summary>
+            <p>No. It is a digital kit: prompts, templates, workflow recipes, and implementation checklists you can apply with tools you already use.</p>
+          </details>
+          <details>
+            <summary>Does it send customer messages automatically?</summary>
+            <p>No. The workflows are designed for human-reviewed AI output. AI drafts and summarizes; the business owner approves final messages.</p>
+          </details>
+          <details>
+            <summary>Who is this for?</summary>
+            <p>Small businesses, agencies, consultants, recruiters, coaches, and local service operators who handle repetitive intake and follow-up work.</p>
+          </details>
+        </div>
       </section>
     </main>
   </body>
